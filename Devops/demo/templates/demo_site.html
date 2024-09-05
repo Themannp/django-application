@@ -1,101 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Docker Learning Demo - Mann Patel</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: yellow;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
+        /* Header Styles */
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
 
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
 
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+        /* Intro Section */
+        .intro {
+            padding: 40px 0;
+            background-color: white;
+            text-align: center;
+        }
 
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: yellow;
-}
+        .intro h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+        .intro p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* Resume Section */
+        .resume {
+            padding: 40px 0;
+            background-color: #e8e8e8;
+        }
+
+        .resume h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+
+        .resume .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .resume ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .resume li {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Docker Learning Demo by Mann Patel</h1>
+            <p>Welcome to my learning page. Explore Docker concepts and check out my resume below.</p>
+        </div>
+    </header>
 
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm Mann Patel, a passionate learner with expertise in Computer Engineering and experience 
+                    as a Technical Customer Support Specialist and Full Stack Developer. I'm currently diving deep into Docker!
+                </p>
+            </div>
+        </section>
 
-<header>
-  <h2>Free DevOps Course By Abhishek</h2>
-</header>
+        <section class="resume">
+            <div class="container">
+                <h2>My Resume</h2>
+                <a href="Mann Patel Res..pdf" class="button" download>Download My Resume</a>
+                <ul>
+                    <li><strong>Degree:</strong> Computer Engineering</li>
+                    <li><strong>Post Graduate:</strong> Mobile Solutions Development</li>
+                    <li><strong>Skills:</strong> JavaScript, C#, Swift, Python, SQL, Docker, AWS, Agile, CI/CD</li>
+                    <li><strong>Experience:</strong> Technical Support, Full Stack Development</li>
+                    <li><strong>Learning:</strong> Docker, Microservices, Cloud Solutions</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="www.youtube.com/@AbhishekVeeramalla">YouTube</a></li>
-      <li><a href="www.linkedin.com/in/abhishek-veeramalla-77b33996/">LinkedIn</a></li>
-      <li><a href="https://telegram.me/abhishekveeramalla">Telegram</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>Agenda</h1>
-    <p>Learn DevOps with strong foundational knowledge and practical understanding</p>
-    <p>Please Share the Channel with your friends and colleagues</p>
-  </article>
-</section>
-
-<footer>
-  <p>@AbhishekVeeramalla</p>
-</footer>
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mann Patel. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
-
